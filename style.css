@@ -24,3 +24,7 @@ main {
 #label-rate {
   display: flex;
 }
+
+#form-data {
+  display: none;
+}

@@ -14,7 +14,7 @@
     
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <section>
-            <form action="" class="trybewarts-login" method="get">
+            <form action="" class="trybewarts-login">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email">
                 <label for="senha">Senha</label>
@@ -25,7 +25,8 @@
     </header>
 
     <main>
-        <form action="" id="evaluation-form">
+        <section id="form-data"></section>
+        <form action="" id="evaluation-form" method="get">
             <section>
             <label for="input-name"></label>
             <input type="text" id="input-name" placeholder="Nome">
@@ -67,7 +68,8 @@
             <input type="radio" name="rate" value="10">10
         </label>
         <label class="textarea" for="">Deixe seu comentário:
-        <textarea name="" id="" maxlength="500" cols="30" rows="10"></textarea>
+        <textarea name="" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+        <span id="counter">500</span>
         </label>
         <label for="" id="label-infos">Você concorda com o uso das informações acima?
             <input type="checkbox" id="agreement">
