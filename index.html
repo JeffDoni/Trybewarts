@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -25,36 +27,51 @@
     </header>
 
     <main>
-        <section id="form-data"></section>
+        <section id="form-data">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </section>
         <form action="" id="evaluation-form" method="get">
             <section>
             <label for="input-name"></label>
-            <input type="text" id="input-name" placeholder="Nome">
+            <input type="text" id="input-name" placeholder="Nome" name="input-name">
             <label for="input-lastname"></label>
-            <input type="text" id="input-lastname" placeholder="Sobrenome">
+            <input type="text" id="input-lastname" placeholder="Sobrenome" name="input-lastname">
             </section>
             <section>
             <label for="input-email"></label>
             <input type="email" id="input-email" placeholder="Email">
-            <select name="" id="house">Casa:
+            <select name="house" id="house">Casa:
                 <option id="gitnoria-house" value="Gitnória">Gitnória</option>
                 <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
                 <option id="corvinode-house" value="Corvinode">Corvinode</option>
                 <option id="pytherina-house" value="Pytherina">Pytherina</option>
 
             </select>
+            <br>
+            <br>
             </section>
             <label id="label-family" for="">Qual sua família?</label>
             <input type="radio" name="family" value="Frontend" >Frontend
             <input type="radio" name="family" value="Backend" >Backend
             <input type="radio" name="family" value="FullStack" >FullStack
+            <br>
+            <br>
+            <br>
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-            <input type="checkbox" class="subject" name="" id="" value="HoFs" >HoFs
-            <input type="checkbox" class="subject" name="" id="" value="Jest" >Jest
-            <input type="checkbox" class="subject" name="" id="" value="Promises" >Promises
-            <input type="checkbox" class="subject" name="" id="" value="React" >React
-            <input type="checkbox" class="subject" name="" id="" value="SQL" >SQL
-            <input type="checkbox" class="subject" name="" id="" value="Python" >Python
+            <input type="checkbox" class="subject" name="materias" id="" value="HoFs" >HoFs
+            <input type="checkbox" class="subject" name="materias" id="" value="Jest" >Jest
+            <input type="checkbox" class="subject" name="materias" id="" value="Promises" >Promises
+            <input type="checkbox" class="subject" name="materias" id="" value="React" >React
+            <input type="checkbox" class="subject" name="materias" id="" value="SQL" >SQL
+            <input type="checkbox" class="subject" name="materias" id="" value="Python" >Python
+            <br>
+            <br>
             <label id="label-rate" for="">Como você avalia a Trybewarts?
             <input type="radio" name="rate" value="1">1
             <input type="radio" name="rate" value="2">2
@@ -67,9 +84,14 @@
             <input type="radio" name="rate" value="9">9
             <input type="radio" name="rate" value="10">10
         </label>
+            <br>
+            <br>
         <label class="textarea" for="">Deixe seu comentário:
-        <textarea name="" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+            <br>
+         <fieldset class="sobre">
+        <textarea name="" id="textarea" maxlength="500" cols="50" rows="10"></textarea>
         <span id="counter">500</span>
+         </fieldset>
         </label>
         <label for="" id="label-infos">Você concorda com o uso das informações acima?
             <input type="checkbox" id="agreement">
