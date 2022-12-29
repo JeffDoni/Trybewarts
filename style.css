@@ -1,25 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-evenly;
   align-items: center;
+  height: 100px;
 }
 
 body {
   font-size: 20px;
+  background-image: url(https://sm.ign.com/t/ign_br/screenshot/default/hogwartscastle-wb-f4-hogwartsthroughthetrees-illust-100615-l_mks9.1200.jpg);
+  background-size: cover;
 }
 
 .trybewarts-login {display: flex;
 }
 
+.trybewarts-header-logo {
+  height: 100px;
+}
+
 main {
   display: flex;
-
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin-left: 100px;
+  color: white;
 }
 
 #trybewarts-forms-logo {
@@ -28,15 +42,14 @@ main {
 
 #label-rate {
   display: flex;
+  gap: 3px;
 }
-
 
 span {
   position: absolute;
   bottom: 0;
   left: 93%;
 }
-
 
 footer {
   display: flex;
@@ -64,4 +77,26 @@ input {
 
 select {
   font-size: 20px;
+}
+
+#form-data {
+  background-image: url(./images/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  width: 400px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-style: italic;
+}
+
+.inscrito {
+  margin-bottom: 0;
+  margin-left: 100px;
+}
+
+#submit-btn{
+  width: 540px;
 }
